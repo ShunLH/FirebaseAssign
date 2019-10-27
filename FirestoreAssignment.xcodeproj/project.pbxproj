@@ -100,25 +100,97 @@
 		EF9D2A08236343FC00969A8D /* FirestoreAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				EF9D2A3B2365E1F600969A8D /* storyboards */,
+				EF9D2A392365E1E100969A8D /* data */,
+				EF9D2A382365E1CC00969A8D /* utils */,
+				EF9D2A372365E1A900969A8D /* viewcontrollers */,
+				EF9D2A342365E17000969A8D /* cells */,
+				EF9D2A332365E15D00969A8D /* components */,
 				EF9D2A1D23634A2200969A8D /* GoogleService-Info.plist */,
 				EF9D2A09236343FC00969A8D /* AppDelegate.swift */,
 				EF9D2A0B236343FC00969A8D /* SceneDelegate.swift */,
-				EF9D2A2B236366E800969A8D /* FoodTypeCollectionViewCell.swift */,
-				EF9D2A27236365AF00969A8D /* FoodTypeCollectionViewCell.xib */,
-				EF9D2A0D236343FC00969A8D /* ViewController.swift */,
-				EF9D2A0F236343FC00969A8D /* Main.storyboard */,
 				EF9D2A12236343FD00969A8D /* Assets.xcassets */,
 				EF9D2A14236343FD00969A8D /* LaunchScreen.storyboard */,
 				EF9D2A17236343FD00969A8D /* Info.plist */,
-				EF9D2A1F2363529000969A8D /* FoodItemTableViewCell.swift */,
-				EF9D2A202363529000969A8D /* FoodItemTableViewCell.xib */,
-				EF9D2A23236352A500969A8D /* CardView.swift */,
-				EF9D2A25236361DD00969A8D /* CreateFoodItemViewController.swift */,
-				EF9D2A2D2363717700969A8D /* FoodVO.swift */,
-				EF9D2A2F2364072300969A8D /* ImagePickerManager.swift */,
-				EF9D2A312364081200969A8D /* Extensions.swift */,
 			);
 			path = FirestoreAssignment;
+			sourceTree = "<group>";
+		};
+		EF9D2A332365E15D00969A8D /* components */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D2A2F2364072300969A8D /* ImagePickerManager.swift */,
+				EF9D2A23236352A500969A8D /* CardView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		EF9D2A342365E17000969A8D /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D2A362365E18000969A8D /* swifts */,
+				EF9D2A352365E17A00969A8D /* xibs */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		EF9D2A352365E17A00969A8D /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D2A202363529000969A8D /* FoodItemTableViewCell.xib */,
+				EF9D2A27236365AF00969A8D /* FoodTypeCollectionViewCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		EF9D2A362365E18000969A8D /* swifts */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D2A2B236366E800969A8D /* FoodTypeCollectionViewCell.swift */,
+				EF9D2A1F2363529000969A8D /* FoodItemTableViewCell.swift */,
+			);
+			path = swifts;
+			sourceTree = "<group>";
+		};
+		EF9D2A372365E1A900969A8D /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D2A25236361DD00969A8D /* CreateFoodItemViewController.swift */,
+				EF9D2A0D236343FC00969A8D /* ViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		EF9D2A382365E1CC00969A8D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D2A312364081200969A8D /* Extensions.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		EF9D2A392365E1E100969A8D /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D2A3A2365E1E900969A8D /* vos */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		EF9D2A3A2365E1E900969A8D /* vos */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D2A2D2363717700969A8D /* FoodVO.swift */,
+			);
+			path = vos;
+			sourceTree = "<group>";
+		};
+		EF9D2A3B2365E1F600969A8D /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D2A0F236343FC00969A8D /* Main.storyboard */,
+			);
+			path = storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

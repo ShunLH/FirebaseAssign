@@ -27,7 +27,7 @@ class FoodItemTableViewCell: UITableViewCell {
 			ivFoodItem.sd_setImage(with: URL(string: mData?.imageUrl ?? ""),placeholderImage: UIImage(named: "cheeseburger"),completed: nil)
 			lblName.text = mData?.name
 			lblAmount.text = "$\(mData?.amount ?? 0.0)"
-			lblWaitingTime.text = "Prep in \(mData?.waitingTime)"
+			lblWaitingTime.text = "Prep in \(mData?.waitingTime ?? "")"
 			setRating(mData?.rating ?? 0)
 		}
 	}
@@ -35,8 +35,10 @@ class FoodItemTableViewCell: UITableViewCell {
 	func setRating(_ count : Int){
 		for view in ratingStackView.arrangedSubviews {
 			if let ivRating = view as? UIImageView {
-				if view.tag < count {
-				ivRating.image = UIImage(systemName: "star.fill")
+				if ivRating.tag < count {
+					ivRating.image = UIImage(systemName: "star.fill")
+				}else {
+					ivRating.image = UIImage(systemName: "star")
 				}
 				
 			}

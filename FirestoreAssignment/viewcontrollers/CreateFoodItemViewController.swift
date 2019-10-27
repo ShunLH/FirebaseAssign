@@ -12,7 +12,7 @@ import FirebaseFirestore
 
 class CreateFoodItemViewController: UIViewController {
 	
-	static let identifier = "CreateFoodItemViewController"
+	static let identifier = ""
 	@IBOutlet weak var ivFoodImage: UIImageView!
 	
 	@IBOutlet weak var tfAmount: UITextField!
@@ -66,7 +66,6 @@ class CreateFoodItemViewController: UIViewController {
 	}
 	@IBAction func btnCreateFoodItem(_ sender: Any) {
 		
-		
 		let name = tfFoodName.text ?? ""
 		let amount = Double(tfAmount.text ?? "0.0") ?? 0.0
 		let rating = Double(tfRating.text ?? "0") ?? 0
@@ -76,7 +75,7 @@ class CreateFoodItemViewController: UIViewController {
 			print("download URL = \(url)")
 
 			db.collection(self.DB_COLLECTION_PATH).addDocument(data: ["name":name,"amount":amount,"imageUrl":url,"rating":rating,"waitingTime":waitingTime])
-			self.dismiss(animated: true, completion: nil)
+			self.navigationController?.popViewController(animated: true)
 		}
 
 		
