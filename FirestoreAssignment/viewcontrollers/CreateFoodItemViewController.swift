@@ -12,7 +12,7 @@ import FirebaseFirestore
 
 class CreateFoodItemViewController: UIViewController {
 	
-	
+	static let identifier = "CreateFoodItemViewController"
 	@IBOutlet weak var ivFoodImage: UIImageView!
 	
 	@IBOutlet weak var tfAmount: UITextField!

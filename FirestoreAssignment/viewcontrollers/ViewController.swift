@@ -73,6 +73,11 @@ class ViewController: UIViewController {
 		})
 	}
 	@objc func handleTapCreateFoodView(){
+//		let sb = UIStoryboard(name: "Main", bundle: nil)
+//		guard let vc = sb.instantiateViewController(identifier: CreateFoodItemViewController.identifier) as? CreateFoodItemViewController else {return}
+//		vc.modalPresentationStyle = .fullScreen
+//		vc.DB_COLLECTION_PATH = ViewController.DB_COLLECTION_PATH
+//		self.present(vc, animated: true, completion: nil)
 		self.performSegue(withIdentifier: "createFoodItem", sender: self)
 	}
 
